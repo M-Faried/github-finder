@@ -81,6 +81,7 @@ class App extends Component {
 
   render() {
     const { users, user, repos, loading } = this.state;
+    const websiteName = 'github-finder';
     return (
       <Router>
         <div className='App'>
@@ -91,7 +92,7 @@ class App extends Component {
             <Switch>
               <Route
                 exact
-                path='/'
+                path={`/${websiteName}/`}
                 render={(props) => (
                   <Fragment>
                     <Search
@@ -104,10 +105,10 @@ class App extends Component {
                   </Fragment>
                 )}
               />
-              <Route exact path='/about' component={About} />
+              <Route exact path={`/${websiteName}/about`} component={About} />
               <Route
                 exact
-                path='/user/:login'
+                path={`/${websiteName}/user/:login`}
                 render={(props) => (
                   <User
                     {...props}

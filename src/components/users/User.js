@@ -36,21 +36,19 @@ class User extends Component {
     } = this.props.user;
 
     const { loading, repos } = this.props;
+    const websiteName = 'github-finder';
 
     if (loading) return <Spinner />;
     else {
       return (
         <Fragment>
-          <Link to='/' className='btn btn-light'>
+          {/* Back To The Search Results Page. */}
+          <Link to={`/${websiteName}/`} className='btn btn-light'>
             Back To Search
           </Link>
-          Hireable:{' '}
-          {hireable ? (
-            <i className='fas fa-check text-success' />
-          ) : (
-            <i className='fas fa-times-circle text-danger' />
-          )}
+
           <div className='card grid-2'>
+            {/* Left Part of the intro */}
             <div className='all-center'>
               <img
                 src={avatar_url}
@@ -59,8 +57,18 @@ class User extends Component {
                 alt=''
               />
               <h1>{name}</h1>
-              <p>Location: {location}</p>
+              {location && <p>Location: {location}</p>}
+              <p>
+                Hireable:{' '}
+                {hireable ? (
+                  <i className='fas fa-check text-success' />
+                ) : (
+                  <i className='fas fa-times-circle text-danger' />
+                )}
+              </p>
             </div>
+
+            {/* Right part of the intro */}
             <div>
               {bio && (
                 <Fragment>

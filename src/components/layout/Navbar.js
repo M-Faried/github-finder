@@ -28,6 +28,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   const { title, icon } = props;
+  const websiteName = 'github-finder';
   return (
     <nav className='navbar bg-primary'>
       <h1>
@@ -37,10 +38,10 @@ const Navbar = (props) => {
 
       <ul>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to={`/${websiteName}/`}>Home</Link>
         </li>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to={`/${websiteName}/about`}>About</Link>
         </li>
       </ul>
     </nav>
