@@ -81,7 +81,7 @@ class App extends Component {
 
   render() {
     const { users, user, repos, loading } = this.state;
-    const websiteName = 'github-finder';
+    const websiteName = process.env.REACT_APP_WEBSITE_NAME;
     return (
       <Router>
         <div className='App'>

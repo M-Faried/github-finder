@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const UserItem = (props) => {
   const { avatar_url, login } = props.user;
-  const websiteName = 'github-finder';
+  const websiteName = process.env.REACT_APP_WEBSITE_NAME;
   return (
     <div className='card text-center'>
       <img

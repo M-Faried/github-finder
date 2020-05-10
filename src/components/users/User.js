@@ -36,7 +36,7 @@ class User extends Component {
     } = this.props.user;
 
     const { loading, repos } = this.props;
-    const websiteName = 'github-finder';
+    const websiteName = process.env.REACT_APP_WEBSITE_NAME;
 
     if (loading) return <Spinner />;
     else {

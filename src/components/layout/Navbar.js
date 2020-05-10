@@ -28,7 +28,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   const { title, icon } = props;
-  const websiteName = 'github-finder';
+  const websiteName = process.env.REACT_APP_WEBSITE_NAME;
   return (
     <nav className='navbar bg-primary'>
       <h1>
