@@ -1,12 +1,17 @@
 import React from 'react';
+import { AlertContextConsumer } from '../../context/AlertContext';
 
-const Alert = ({ alert }) => {
+const Alert = () => {
   return (
-    alert !== null && (
-      <div className={`alert-${alert.type}`}>
-        <i className='fas fa-info-circle'>{alert.msg}</i>
-      </div>
-    )
+    <AlertContextConsumer>
+      {(context) =>
+        context.alert !== null && (
+          <div className={`alert-${context.alert.type}`}>
+            <i className='fas fa-info-circle'>{context.alert.msg}</i>
+          </div>
+        )
+      }
+    </AlertContextConsumer>
   );
 };
 
