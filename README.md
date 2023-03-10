@@ -1,3 +1,20 @@
-# About
+# 📐 Expense Tracker Web App (A demo application built using MERN full stack technologies)
 
-This project was developed to learn all REACT framework's concept and methodologies. It was devloped under the guidance of the online course [Modern React Front To Back](https://www.udemy.com/course/modern-react-front-to-back/)
+Github Finder is a web application which enables users retrieve and search all developers on Github.
+
+## 💻 Technologies:
+
+* REACT framework for creating the clinet/front-end of the application.
+
+* React Router.
+
+* ContextAPI to manage the global state of the application.
+
+* Github API
+
+## 📷 Preview:
+
+<br>
+<p align="center">
+    <img src="./screenshots/GitHubFinder.PNG" alt="screen1" width="800"/>    
+</p>
