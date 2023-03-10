@@ -18,3 +18,6 @@ Github Finder is a web application which enables users retrieve and search all d
 <p align="center">
     <img src="./screenshots/GitHubFinder.PNG" alt="screen1" width="800"/>    
 </p>
+
+## 💳 Contact Me:
+You can send me an email on **m.a.faried@gmail.com** or chat with me on my **[LinkedIn](https://www.linkedin.com/in/mo-faried-0258a445/)** profile.
