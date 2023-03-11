@@ -2,6 +2,12 @@
 
 Github Finder is a web application which enables users retrieve and search all developers on Github.
 
+<br>
+
+> 👉 Check the deployed application: [LINK](https://m-faried.github.io/github-finder/) 
+
+<br>
+
 ## 💻 Technologies:
 
 * REACT framework for creating the clinet/front-end of the application.
